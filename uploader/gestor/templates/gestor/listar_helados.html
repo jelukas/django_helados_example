@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load inplace_edit %}
+{% inplace_static %}
+{% block fila_cuadros %}
+        {% for helado in helados %}
+            <div class="span4">
+                <h2>{{ helado.nombre }}</h2>
+                {% inplace_edit "helado.imagen" %}
+                <!--<img src="{{ helado.imagen.url }}" alt="" style="height: 100px;">-->
+                <p>Sabor: {% inplace_edit "helado.sabor" %} </p>
+                <p>{% inplace_edit "helado.descripcion" %}</p>
+                <p><a class="btn btn-success" href="#">Me gusta</a></p>
+            </div>
+        {% endfor %}
+{% endblock %}
+{% block footer %}
+<!-- Modal -->
+<!-- Button to trigger modal -->
+<a href="#cargandoModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+<div id="cargandoModal" class="modal hide fade" tabindex="-1" role="dialog" >
+    <div>holhiuhsdahuihuiha</div>
+</div>
+{% endblock %}

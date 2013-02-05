@@ -1,0 +1,5 @@
+Django==1.4.3
+South==0.7.6
+Unipath==0.2.1
+django-inplaceedit==0.89
+django-inplaceedit-extra-fields==0.0.8

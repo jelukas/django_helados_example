@@ -1,0 +1,17 @@
+.inplaceedit img {
+    height: 175px;
+}
+
+
+#cargandoModal, #cargandoModal div{
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.modal-backdrop{
+    background-image:url('../img/ajax-loader.gif') !important;
+    background-repeat:no-repeat !important;
+    background-attachment:fixed  !important;
+    background-position:center !important;
+}
