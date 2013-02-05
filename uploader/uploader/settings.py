@@ -146,6 +146,9 @@ INSTALLED_APPS = (
 # Extras del Django Inplace Edit de Yaco
 #ADAPTOR_INPLACEEDIT = {'textarea': 'inplaceeditform_extra_fields.fields.AdaptorTinyMCEField'}
 
+#Con este adaptador solo dejamos editar inline los helados de fresa
+ADAPTOR_INPLACEEDIT_EDIT = 'gestor.perms.MiAdaptadorEditInline'
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
